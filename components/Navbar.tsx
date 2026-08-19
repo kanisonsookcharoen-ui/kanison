@@ -70,6 +70,9 @@ export default function Navbar() {
                                 <Link href="/admin/users">Admin</Link>
                             </li>
                             <li>
+                                <Link href="/admin/blogs">ข้อความ</Link>
+                            </li>
+                            <li>
                                 <Link href="/admin/categories">Category</Link>
                             </li>
                             <li>
