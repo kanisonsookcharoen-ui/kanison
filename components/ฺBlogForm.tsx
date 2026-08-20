@@ -44,10 +44,10 @@ export default function BlogForm() {
             const data = await response.json();
 
             if (!response.ok) {
-                throw new Error(data.message ?? "เพิ่มหมวดหมู่ไม่สำเร็จ");
+                throw new Error(data.message ?? "เพิ่มข้อมูลไม่สำเร็จ");
             }
 
-            setMessage("เพิ่มหมวดหมู่สำเร็จ");
+            setMessage("เพิ่มข้อมูลสำเร็จ");
             setTitle("");
             setSlug("");
             setContent("");
@@ -66,7 +66,7 @@ export default function BlogForm() {
     return (
         <div className="page">
             <div className="card">
-                <h1> เพิ่มบทความ</h1>
+                <h1> เพิ่มบทความ </h1>
                 {message && (
                     <p>
                         {message}
@@ -107,7 +107,7 @@ export default function BlogForm() {
                         type="submit"
                         disabled={submitting}
                     >
-                        {submitting ? "กำลังบันทึก..." : "เพิ่มหมวดหมู่"}
+                        {submitting ? "กำลังบันทึก..." : "เพิ่มข้อมูล"}
                     </button>
                 </form>
             </div>

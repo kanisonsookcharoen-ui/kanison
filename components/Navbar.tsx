@@ -57,6 +57,9 @@ export default function Navbar() {
                     <li>
                         <Link href="/contact">Contact</Link>
                     </li>
+                    <li>
+                        <Link href="/blogs">บทความ</Link>
+                    </li>
 
                     {user && (
                         <li>
@@ -67,10 +70,7 @@ export default function Navbar() {
                     {user?.role === "admin" && (
                         <>
                             <li>
-                                <Link href="/admin/users">Admin</Link>
-                            </li>
-                            <li>
-                                <Link href="/admin/blogs">ข้อความ</Link>
+                                <Link href="/admin/blogs">เพิ่มบทความ</Link>
                             </li>
                             <li>
                                 <Link href="/admin/categories">Category</Link>
@@ -88,6 +88,10 @@ export default function Navbar() {
                             </li>
                             <li>
                                 <Link href="/register"> Register </Link>
+                            </li>
+
+                             <li>
+                                <Link href="/blog"> บทความ </Link>
                             </li>
                         </>
                     ) : (
