@@ -1,8 +1,12 @@
+import Image from "next/image";
+import BlogCard from "@/components/BlogCard";
 export default function Home() {
   return (
-    <div>
-      <h2>ยินดีต้องเข้าสู่เว็บไซต์</h2>
-      <p>โดย คณิศร สุขเจริญ</p>
+    <div >
+    
+      <h2> ยินดีต้อนรับเข้าสู่เว็บไซต์ </h2>
+      <p> โดย สมเกียรติ ใจดี </p>
+    <BlogCard/>
     </div>
   );
 }
